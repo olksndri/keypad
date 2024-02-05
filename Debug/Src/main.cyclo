@@ -1,0 +1,4 @@
+../Src/main.c:15:5:main	1
+../Src/main.c:49:6:read_keypad	5
+../Src/main.c:69:6:set_pins_1	1
+../Src/main.c:76:6:delay	2
