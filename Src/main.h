@@ -1,7 +1,26 @@
-
-
 #ifndef MAIN_H_
 #define MAIN_H_
+
+#define ADDR_RCC_AHB1ENR 	((RCC_AHB1ENR_t*)(0x40023800 + 0x30))
+#define ADDR_GPIOA_MODER 	((GPIOx_MODER_t*)(0x40020000 + 0x00))
+#define ADDR_GPIOA_PUPDR 	((GPIOx_PUPDR_t*)(0x40020000 + 0x0C))
+#define ADDR_GPIOA_IDR 		((GPIOx_IDR_t*)(0x40020000 + 0x10))
+#define ADDR_GPIOA_ODR 		((GPIOx_ODR_t*)(0x40020000 + 0x14))
+
+#define GPIOx_ENABLE 		(1)
+#define GPIOx_DISABLE 		(0)
+#define	GPIOx_INPUT_MODE 	(0)
+#define	GPIOx_OUTPUT_MODE 	(1)
+#define GPIOx_FUNCTION_MODE (2)
+#define GPIOx_ANALOG_MODE 	(3)
+#define GPIOx_PULL_UP 		(1)
+#define GPIOx_PULL_DOWN 	(2)
+#define PIN_HIGH			(1)
+#define PIN_LOW 			(0)
+
+#define DELAY_250ms 	(571428ul)
+#define DELAY_500ms 	(1142857ul)
+#define DELAY_1000ms 	(2285714ul)
 
 typedef struct {
 	uint32_t GPIOA_EN:1;
